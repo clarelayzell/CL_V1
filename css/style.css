@@ -26,7 +26,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-family: 'Urbanist', light;
+  font-family: 'Urbanist', sans-serif;
   font-size: 40px;
   font-weight: 300;
   text-align: left;
@@ -50,7 +50,7 @@ h4 {
 }
 
 h5{
-  font-family: 'PT+Serif', italic;
+  font-family: 'PT Serif', serif;
   font-size: 25px;
   font-weight: 200;
 }
@@ -87,9 +87,9 @@ img {
   width: 100%;
 }
 
-  {
+  /*{
   padding: 1em 0;
-}
+}*/
 
 .logo {
   max-width: 100px;
@@ -489,17 +489,18 @@ Large devices (1024px or larger)
 
   #story .container {
     max-width: 700px;
-    text-align: centre;
+    text-align: center;
   }
 
   #about .image {
     max-width: 200px;
 
   }
+}
 
 
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media (min-width: 1440px){}
