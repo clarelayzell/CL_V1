@@ -38,9 +38,11 @@ h2 {
 }
 
 h3 {
+  color: rgba(232, 227, 22, .8);
   font-size: 1.25em;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 20px;
+  background-color: #ffffff;
 }
 
 h4 {
@@ -49,12 +51,20 @@ h4 {
   /* Sets the font weight to 300 */
 }
 
-h5{
+h5 {
   font-family: 'PT Serif', serif;
   font-size: 25px;
   font-weight: 200;
 }
 
+#vela {
+  font-size: 1em;
+  font-weight: 300;
+  padding: px;
+  background-color: rgba(232, 227, 22, .8);
+  margin-left: 50px;
+  background-image: url('img/home/pic.png');
+}
 
 #copy {
   font-size: 10px;
@@ -87,10 +97,9 @@ img {
   width: 100%;
 }
 
-  /*{
+/*{
   padding: 1em 0;
 }*/
-
 .logo {
   max-width: 100px;
   margin-top: 6px;
@@ -172,7 +181,6 @@ a:active {
   color: #6d797e
 }
 
-
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -219,7 +227,6 @@ a:active {
   animation: 20s cloud-move-reverse infinite alternate linear;
 }
 
-
 /* header styling */
 .container {
   padding: 0 15px;
@@ -259,15 +266,14 @@ nav>ul>li>a:visited {
 
 nav>ul>li>a:hover,
 a:focus {
-  color: #FF8001;
+  color: rgba(232, 227, 22, .8);
   text-decoration: none;
 }
 
 nav>ul>li>a:active {
   /* selected link */
-  color: #FF8001;
+  color: rgba(232, 227, 22, .8);
 }
-
 
 /* our hamburger menu */
 .navtoggle li:not(:last-child) {
@@ -324,7 +330,6 @@ nav>ul>li>a:active {
 }
 
 /* vela styling*/
-
 #overview {
   background-color: #efefef;
   padding: 2em 0;
@@ -332,12 +337,11 @@ nav>ul>li>a:active {
 
 #findings, #key {
   background-color: #ffffff;
-  font-family:'PT+Serif';
+  font-family: 'PT Serif', serif;
   font-style: italic;
   padding: 0.5em 1em;
   margin: 1em 0;
 }
-
 
 /* about styling*/
 #about {
@@ -345,10 +349,9 @@ nav>ul>li>a:active {
 }
 
 #skills {
-    max-width: 60%;
-    margin: 0 auto;
+  max-width: 60%;
+  margin: 0 auto;
 }
-
 
 /* footer */
 footer {
@@ -367,17 +370,17 @@ footer {
   padding: 10px;
 }
 
-.social:active  {
+.social:active {
   padding: 10px;
   color: #ffffff;
-  }
+}
 
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
+}
 
 /* media queries */
 /* ==============================
@@ -390,7 +393,6 @@ Medium devices (640px and larger)
 
   .col-md-4 {
     width: 33.33%;
-
   }
 
   .navtoggle li:not(:last-child) {
@@ -406,11 +408,11 @@ Medium devices (640px and larger)
     padding: 0px 10px;
   }
 
-.row::after{
-  content:"";
-  display: table;
-  clear: both;
-}
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
   header {
     text-align: unset;
@@ -446,6 +448,16 @@ Medium devices (640px and larger)
     display: block;
   }
 
+  #vela {
+    font-size: 2em;
+    font-weight: 300;
+    background-color: rgba(232, 227, 22, .8);
+    margin-left: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+      background-image: url('img/home/pic.png');
+  }
+
   /* fonts */
   body {
     font-size: 18px;
@@ -458,12 +470,7 @@ Medium devices (640px and larger)
   .about {
     text-align: center;
   }
-
 }
-
-
-
-
 
 /* ==============================
 Large devices (1024px or larger)
@@ -494,13 +501,10 @@ Large devices (1024px or larger)
 
   #about .image {
     max-width: 200px;
-
   }
 }
-
-
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media (min-width: 1440px){}
+@media (min-width: 1440px) {}
