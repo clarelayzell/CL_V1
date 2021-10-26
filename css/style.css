@@ -8,6 +8,7 @@ neutral-colour (Grey): #ced6d9;
   box-sizing: border-box;
 }
 
+
 /* fonts */
 body {
   background-color: #ffffff;
@@ -30,19 +31,18 @@ h1 {
   font-size: 40px;
   font-weight: 300;
   text-align: left;
+  background-color: rgba(232, 227, 22, .8);
 }
 
 h2 {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h3 {
-  color: rgba(232, 227, 22, .8);
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 20px;
-  background-color: #ffffff;
 }
 
 h4 {
@@ -60,15 +60,20 @@ h5 {
 #vela {
   font-size: 1em;
   font-weight: 300;
-  padding: px;
   background-color: rgba(232, 227, 22, .8);
   margin-left: 50px;
-  background-image: url('img/home/pic.png');
 }
 
 #copy {
   font-size: 10px;
   text-align: center;
+}
+
+.h1 {
+  background-color: rgba(232, 227, 22, .8);
+    position: relative;
+    left: -2px;
+    top: -1px;
 }
 
 .story {
@@ -118,13 +123,13 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #ffffff;
+  color: rgba(232, 227, 22, .8);
   text-decoration: none;
 }
 
 a:active {
   /* selected link */
-  color: #a3a1a1;
+  color: #707070;
 }
 
 .button {
@@ -455,7 +460,6 @@ Medium devices (640px and larger)
     margin-left: 200px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-      background-image: url('img/home/pic.png');
   }
 
   /* fonts */
