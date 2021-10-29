@@ -31,7 +31,7 @@ h1 {
   font-size: 40px;
   font-weight: 300;
   text-align: left;
-  background-color: rgba(232, 227, 22, .8);
+    background-color: rgba(232, 227, 22, .8);
 }
 
 h2 {
@@ -184,6 +184,10 @@ a:active {
 
 .button.cv:visited {
   color: #6d797e
+}
+
+.social a: {
+   color: #ffffff
 }
 
 @keyframes color-change {
