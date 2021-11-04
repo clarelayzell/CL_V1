@@ -29,9 +29,10 @@ h1, h2, h3 {
 h1 {
   font-family: 'Urbanist', sans-serif;
   font-size: 40px;
+  line-height: 55px;
+  display: inline;
   font-weight: 300;
-  text-align: left;
-    background-color: rgba(232, 227, 22, .8);
+  background-color: rgba(232, 227, 22, .8);
 }
 
 h2 {
@@ -111,7 +112,7 @@ img {
 }
 
 a {
-  color: #ffffff;
+  color: #707070;
   text-decoration: none;
   /* No underlining */
 }
@@ -123,7 +124,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: rgba(232, 227, 22, .8);
+  color: rgba(232, 227, 22, 8);
   text-decoration: none;
 }
 
@@ -183,11 +184,23 @@ a:active {
 }
 
 .button.cv:visited {
-  color: #6d797e
+  color: #707070
+}
+
+.social a {
+   color: #707070;
+}
+
+.social a:visited {
+   color: #707070;
 }
 
 .social a:active {
    color: #707070;
+}
+
+.social a:hover {
+color: rgba(232, 227, 22, 8);
 }
 
 @keyframes color-change {
@@ -332,10 +345,11 @@ nav>ul>li>a:active {
 
 /* hero styling*/
 #hero {
-  background-color: #ffffff;
+background-image: url("../img/home/pic1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+  background-color: #ffffff;
 }
 
 /* vela styling*/
@@ -429,8 +443,10 @@ Medium devices (640px and larger)
   }
 
   h1 {
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 400;
+    line-height: 70px;
+    display: inline;
     text-align: left;
   }
 
