@@ -417,6 +417,11 @@ nav>ul>li>a:active {
   padding: 10px;
 }
 
+.social:hover {
+  color: rgba(232, 227, 22, .8);
+  color: #ffffff;
+}
+
 .social:active {
   padding: 10px;
   color: #ffffff;
