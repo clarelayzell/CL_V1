@@ -8,7 +8,6 @@ neutral-colour (Grey): #ced6d9;
   box-sizing: border-box;
 }
 
-
 /* fonts */
 body {
   background-color: #ffffff;
@@ -37,7 +36,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h3 {
@@ -63,6 +62,9 @@ h5 {
   font-weight: 300;
   background-color: rgba(232, 227, 22, .8);
   margin-left: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 10px;
 }
 
 #copy {
@@ -72,9 +74,9 @@ h5 {
 
 .h1 {
   background-color: rgba(232, 227, 22, .8);
-    position: relative;
-    left: -2px;
-    top: -1px;
+  position: relative;
+  left: -2px;
+  top: -1px;
 }
 
 .story {
@@ -99,6 +101,11 @@ h5 {
   padding: 0px;
 }
 
+.skills h2 {
+  display: inline;
+  color: #ffffff;
+}
+
 img {
   width: 100%;
 }
@@ -112,7 +119,7 @@ img {
 }
 
 a {
-  color: #707070;
+  color: #ffffff;
   text-decoration: none;
   /* No underlining */
 }
@@ -136,9 +143,8 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ffffff;
+  background-color: #000000;
   /* needed to override the default link color */
-  color: #000000 !important;
   font-weight: 200;
   text-decoration: none;
   padding: 0px 10px;
@@ -149,38 +155,39 @@ a:active {
 }
 
 .button:visited {
-  color: #6d797e;
+  background-color: #000000;
+  color: #ffffff !important;
 }
 
 .button:hover {
-  background-color: #000000;
-  color: #ffffff !important;
+  background-color: #ffffff;
+  color: #000000 !important;
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button.contact {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   font-weight: 200;
 }
 
 .button.contact:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .button.cv {
-  background-color: #ffffff;
-  color: #6d797e;
-  border: 2px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
   margin: 30px;
 }
 
 .button.cv:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000 !important;
 }
 
 .button.cv:visited {
@@ -188,19 +195,20 @@ a:active {
 }
 
 .social a {
-   color: #707070;
+  color: #000000;
 }
 
 .social a:visited {
-   color: #707070;
+  color: #000000;
 }
 
 .social a:active {
-   color: #707070;
+  color: #707070;
 }
 
 .social a:hover {
-color: rgba(232, 227, 22, 8);
+  background-color: #ffffff;
+  color: #000000 !important;
 }
 
 @keyframes color-change {
@@ -264,6 +272,15 @@ header {
 
 main {
   padding-top: 90px;
+}
+
+
+footer {
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 nav>ul {
@@ -334,7 +351,6 @@ nav>ul>li>a:active {
 .work .row {
   margin: 25px 0;
   padding: 0 0 25px;
-  border-bottom: 1px solid #efefef;
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -345,7 +361,7 @@ nav>ul>li>a:active {
 
 /* hero styling*/
 #hero {
-background-image: url("../img/home/pic1.png");
+  background-image: url("../img/home/pic1.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px 0;
@@ -366,9 +382,18 @@ background-image: url("../img/home/pic1.png");
   margin: 1em 0;
 }
 
+.story h2 {
+  background-color: #ffffff;
+  line-height: 55px;
+  display: inline;
+  font-size: 25px;
+  font-weight: 200;
+}
+
 /* about styling*/
 #about {
   padding: 3em 1em;
+  background-color: rgba(232, 227, 22, .8);
 }
 
 #skills {
@@ -376,14 +401,13 @@ background-image: url("../img/home/pic1.png");
   margin: 0 auto;
 }
 
-/* footer */
-footer {
-  background-color: #efefef;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  text-align: center;
+#story {
+  background-color: rgba(232, 227, 22, .8);
 }
+
+
+
+/* footer */
 
 .social {
   margin-top: 1em;
@@ -444,10 +468,16 @@ Medium devices (640px and larger)
 
   h1 {
     font-size: 3em;
-    font-weight: 400;
     line-height: 70px;
     display: inline;
     text-align: left;
+  }
+
+  h5 {
+    line-height: 55px;
+    display: inline;
+    font-weight: 300;
+    background-color: #ffffff;
   }
 
   nav {
@@ -463,10 +493,6 @@ Medium devices (640px and larger)
   .logo {
     max-width: 150px;
     margin-top: 6px;
-  }
-
-  #hero {
-    text-align: center;
   }
 
   #hero span {
@@ -517,6 +543,11 @@ Large devices (1024px or larger)
   .col-lg-7 {
     width: 60%;
   }
+
+  footer {
+    background-color: #ffffff;
+
+      }
 
   #story .container {
     max-width: 700px;
